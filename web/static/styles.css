@@ -1,12 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 .fresh-gradient {
   background-color: rgb(134, 239, 172);
-  background-image: linear-gradient(
-    to right bottom,
-    rgb(219, 234, 254),
-    rgb(187, 247, 208),
-    rgb(254, 249, 195)
-  );
+  background-image: linear-gradient(to right bottom,
+      rgb(219, 234, 254),
+      rgb(187, 247, 208),
+      rgb(254, 249, 195));
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(140 140 140);
+  font-family: sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+th,
+td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
 }

@@ -18,3 +18,5 @@ export async function getUser(id: number) {
     .limit(1);
   return user[0];
 }
+
+export const userType = usersTable.$inferSelect

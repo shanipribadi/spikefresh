@@ -31,6 +31,9 @@
       "head"
     ]
   },
+  "unstable": [
+    "temporal"
+  ],
   "vendor": true,
   "workspace": [
     "./web",
