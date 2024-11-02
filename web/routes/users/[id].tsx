@@ -1,6 +1,6 @@
 import { page } from "fresh";
 import { define } from "../../utils.ts";
-import { getUser, userType } from "@spikefresh/store";
+import { getUser, type userType } from "@spikefresh/store";
 
 export const handler = define.handlers({
   async GET(ctx) {
@@ -12,7 +12,7 @@ export const handler = define.handlers({
 
 export default define.page<typeof handler>(UserById);
 
-function UserById({ data }: { data: typeof userType }) {
+function UserById({ data }: { data: userType }) {
   return (
     <>
       <h1>Hello {data.name}!</h1>

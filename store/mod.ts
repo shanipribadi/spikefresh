@@ -19,4 +19,4 @@ export async function getUser(id: number) {
   return user[0];
 }
 
-export const userType = usersTable.$inferSelect
+export type userType = typeof usersTable.$inferSelect
