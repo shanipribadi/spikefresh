@@ -15,8 +15,8 @@ export default define.page<typeof handler>(UserById);
 function UserById({ data }: { data: userType }) {
   return (
     <>
-      <h1>Hello {data.name}!</h1>
-      <section className="overflow-x-auto">
+      <section className="overflow-x-auto prose">
+        <h2>Hello {data.name}!</h2>
         <table className="table table-zebra">
           <tbody>
             <tr>
