@@ -16,8 +16,8 @@ function UserById({ data }: { data: userType }) {
   return (
     <>
       <h1>Hello {data.name}!</h1>
-      <section>
-        <table>
+      <section className="overflow-x-auto">
+        <table className="table table-zebra">
           <tbody>
             <tr>
               <th>Name</th>
