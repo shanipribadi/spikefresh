@@ -32,6 +32,7 @@
     "npm:@types/pg@^8.11.10": "8.11.10",
     "npm:autoprefixer@10.4.17": "10.4.17_postcss@8.4.35",
     "npm:cssnano@6.0.3": "6.0.3_postcss@8.4.35",
+    "npm:daisyui@*": "4.12.14_postcss@8.4.35",
     "npm:daisyui@^4.12.14": "4.12.14_postcss@8.4.35",
     "npm:dotenv@^16.4.5": "16.4.5",
     "npm:drizzle-kit@*": "0.27.1_esbuild@0.19.12",

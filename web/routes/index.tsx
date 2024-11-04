@@ -1,11 +1,13 @@
 import { useSignal } from "@preact/signals";
 import { define } from "../utils.ts";
 import Counter from "../islands/Counter.tsx";
+import Loading from "../islands/Loading.tsx";
 
 export default define.page(Home);
 
 function Home() {
   const count = useSignal(3);
+  const loadingText = useSignal("loading...");
 
   return (
     <div class="px-4 py-8 mx-auto fresh-gradient">
@@ -23,6 +25,7 @@ function Home() {
           <code class="mx-2">./routes/index.tsx</code> file, and refresh.
         </p>
         <Counter count={count} />
+        <Loading text={loadingText} />
       </div>
     </div>
   );
